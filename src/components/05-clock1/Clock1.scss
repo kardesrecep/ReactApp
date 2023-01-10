@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "digital";
+    src: url("./ds-digi.ttf");
+}
+.clock-container{
+    font-family: digital;
+    background-color: rgb(10, 0, 0);
+    color: rgb(0, 255, 81);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+.time{
+    font-size: 5rem;
+}

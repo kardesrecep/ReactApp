@@ -1,0 +1,64 @@
+/* import HelloWorld from "./components/01-hello-world/hello-world";
+import Jsx1 from "./components/03-jsx/Jsx1";
+import Jsx2 from "./components/03-jsx/Jsx2";
+import Jsx3 from "./components/03-jsx/Jsx3"; 
+import Jsx4 from "./components/03-jsx/Jsx4"; 
+import Jsx5 from "./components/03-jsx/Jsx5"; 
+import Jsx6 from "./components/03-jsx/Jsx6";
+import Style1 from "./components/04-styles/Style1";
+import Style2 from "./components/04-styles/Style2";
+import Style3 from "./components/04-styles/Style3";
+import Style4 from "./components/04-styles/Style4"
+import Clock1 from "./components/05-clock1/Clock1";
+import Greeting from "./components/06-props/Greeting"; 
+import Products from "./components/07-props2/Products";
+import Clock2 from "./components/08-clock2/Clock2"; 
+import Image from "./components/09-image/Image"; 
+import Gallery from "./components/09-image/Gallery"; 
+import ProfileCard from "./components/10-profile-card/ProfileCard"; 
+import BootstrapStatic from "./components/11-bootstrap/BootstrapStatic";    
+import BootstrapDynamic from "./components/11-bootstrap/BootstrapDynamic"; 
+import Icons from "./components/12-icons/Icons"; 
+import Events from "./components/13-events/Events"; */
+
+import Shop from "./components/14-products/Shop";
+
+
+const App = () => {
+  return (
+    <div>
+      {/*  <HelloWorld />
+      <Jsx1 />
+      <Jsx2 />
+      <Jsx3 />
+      <Jsx4 />
+      <Jsx5 />
+      <Jsx6 />
+      <Style1 />
+      <Style2 />
+      <Style3 />
+      <Style4 />
+      <Clock1 /> 
+      <Greeting/> 
+      <Products/>  
+      <Clock2 textColor="green" bgColor="yellow" /> 
+      <Image/> 
+         <Gallery/>*/}
+ {/*      <ProfileCard
+        avatar="profile.jpg"
+        name="Tanya Kardes"
+        location="Turkey, Istanbul"
+        shot="1243"
+        followers="21232"
+        following="1"
+      /> */}
+    {/*   <BootstrapStatic/> 
+    <BootstrapDynamic/>  
+    <Icons/>  
+    <Events/> */}
+    <Shop/>
+    
+    </div>
+  );
+};
+export default App;
