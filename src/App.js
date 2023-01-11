@@ -19,9 +19,13 @@ import ProfileCard from "./components/10-profile-card/ProfileCard";
 import BootstrapStatic from "./components/11-bootstrap/BootstrapStatic";    
 import BootstrapDynamic from "./components/11-bootstrap/BootstrapDynamic"; 
 import Icons from "./components/12-icons/Icons"; 
-import Events from "./components/13-events/Events"; */
+import Events from "./components/13-events/Events"; 
+import Shop from "./components/14-products/Shop"; 
+import Stateless from "./components/15-usestate/Stateless"; 
+import State from "./components/15-usestate/State"; 
+import Counter from "./components/16-counter/Counter";*/
 
-import Shop from "./components/14-products/Shop";
+import Birthday from "./components/17-birthday/Birthday";
 
 
 const App = () => {
@@ -56,7 +60,11 @@ const App = () => {
     <BootstrapDynamic/>  
     <Icons/>  
     <Events/> */}
-    <Shop/>
+  {/*   <Shop/>  
+  <Stateless/> 
+  <State/> 
+  <Counter/>*/}
+  <Birthday/>
     
     </div>
   );
