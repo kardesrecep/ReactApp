@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { GrPowerReset } from "react-icons/gr";
-const Counter = () => {
+
+ const Counter = () => {
   const [counter, setCounter] = useState(0);
   return (
     <ButtonGroup aria-label="Basic example">

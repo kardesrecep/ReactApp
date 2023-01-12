@@ -23,9 +23,13 @@ import Events from "./components/13-events/Events";
 import Shop from "./components/14-products/Shop"; 
 import Stateless from "./components/15-usestate/Stateless"; 
 import State from "./components/15-usestate/State"; 
-import Counter from "./components/16-counter/Counter";*/
+import Counter from "./components/16-counter/Counter";  
+import Birthday from "./components/17-birthday/Birthday"; 
+import UseEffect from "./components/18-useeffect/UseEffect";
+import Clock3 from "./components/19-clock3/Clock3";  
+import UseEffect2 from "./components/18-useeffect/UseEffect2";*/
 
-import Birthday from "./components/17-birthday/Birthday";
+import CountryFilter from "./components/21-country-filter/CountryFilter";
 
 
 const App = () => {
@@ -63,8 +67,12 @@ const App = () => {
   {/*   <Shop/>  
   <Stateless/> 
   <State/> 
-  <Counter/>*/}
-  <Birthday/>
+  <Counter/> 
+  <Birthday/> 
+  <UseEffect/> 
+  <Clock3/> 
+  <UseEffect2/> */}
+  <CountryFilter/>
     
     </div>
   );
