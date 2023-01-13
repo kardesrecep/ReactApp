@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Form, Table } from "react-bootstrap";
 import data from "./countries.json";
+
+
+
 const CountryFilter = () => {
   const [countries, setCountries] = useState(data);
   const [searchText, setSearchText] = useState("");
+
+
+
   useEffect(() => {
     const arr = data.filter((item) =>
       item.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
@@ -21,7 +27,7 @@ const CountryFilter = () => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
+            <th>Sira No</th>
             <th>Country Code</th>
             <th>Country Name</th>
           </tr>

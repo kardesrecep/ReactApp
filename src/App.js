@@ -27,10 +27,11 @@ import Counter from "./components/16-counter/Counter";
 import Birthday from "./components/17-birthday/Birthday"; 
 import UseEffect from "./components/18-useeffect/UseEffect";
 import Clock3 from "./components/19-clock3/Clock3";  
-import UseEffect2 from "./components/18-useeffect/UseEffect2";*/
-
-import CountryFilter from "./components/21-country-filter/CountryFilter";
-
+import UseEffect2 from "./components/18-useeffect/UseEffect2"; 
+import CountryFilter from "./components/21-country-filter/CountryFilter"; 
+import Scroll from "./components/21-useref/Scroll";
+import UseRef from "./components/21-useref/UseRef"; 
+import ClassComp from "./components/22-class-type-component/ClassComp"; */
 
 const App = () => {
   return (
@@ -52,7 +53,7 @@ const App = () => {
       <Clock2 textColor="green" bgColor="yellow" /> 
       <Image/> 
          <Gallery/>*/}
- {/*      <ProfileCard
+      {/*      <ProfileCard
         avatar="profile.jpg"
         name="Tanya Kardes"
         location="Turkey, Istanbul"
@@ -60,20 +61,26 @@ const App = () => {
         followers="21232"
         following="1"
       /> */}
-    {/*   <BootstrapStatic/> 
+      {/*   <BootstrapStatic/> 
     <BootstrapDynamic/>  
     <Icons/>  
     <Events/> */}
-  {/*   <Shop/>  
+      {/*   <Shop/>  
   <Stateless/> 
   <State/> 
   <Counter/> 
   <Birthday/> 
   <UseEffect/> 
   <Clock3/> 
-  <UseEffect2/> */}
-  <CountryFilter/>
-    
+  <UseEffect2/>
+  <CountryFilter/> 
+  <UseRef/> 
+  <Scroll/>  
+  <ClassComp/>*/}
+
+
+
+  
     </div>
   );
 };
