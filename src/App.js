@@ -31,7 +31,10 @@ import UseEffect2 from "./components/18-useeffect/UseEffect2";
 import CountryFilter from "./components/21-country-filter/CountryFilter"; 
 import Scroll from "./components/21-useref/Scroll";
 import UseRef from "./components/21-useref/UseRef"; 
-import ClassComp from "./components/22-class-type-component/ClassComp"; */
+import ClassComp from "./components/22-class-type-component/ClassComp"; 
+import UserCards from "./components/23-fetch/UserCards";*/
+
+import Countries from "./components/24-axios/Countries";
 
 const App = () => {
   return (
@@ -52,20 +55,20 @@ const App = () => {
       <Products/>  
       <Clock2 textColor="green" bgColor="yellow" /> 
       <Image/> 
-         <Gallery/>*/}
-      {/*      <ProfileCard
-        avatar="profile.jpg"
-        name="Tanya Kardes"
-        location="Turkey, Istanbul"
-        shot="1243"
-        followers="21232"
-        following="1"
-      /> */}
-      {/*   <BootstrapStatic/> 
-    <BootstrapDynamic/>  
-    <Icons/>  
-    <Events/> */}
-      {/*   <Shop/>  
+  <Gallery/>
+   <ProfileCard
+    avatar="profile.jpg"
+    name="Tanya Kardes"
+    location="Turkey, Istanbul"
+    shot="1243"
+    followers="21232"
+    following="1"
+    /> 
+  <BootstrapStatic/> 
+  <BootstrapDynamic/>  
+  <Icons/>  
+  <Events/> 
+  <Shop/>  
   <Stateless/> 
   <State/> 
   <Counter/> 
@@ -76,7 +79,13 @@ const App = () => {
   <CountryFilter/> 
   <UseRef/> 
   <Scroll/>  
-  <ClassComp/>*/}
+  <ClassComp/>
+<UserCards/>*/}
+<Countries/>
+
+
+
+
 
 
 
