@@ -10,9 +10,16 @@ const Countries = () => {
   
 
   const loadData = async () => {
-    const resp = await axios.get("https://restcountries.com/v3.1/all");
+try {
+   const resp = await axios.get("https://restcountries.com/v3.1/all");
     console.log(resp.data);
     setCountries(resp.data);
+  
+} catch (error) {
+  
+}
+
+   
     setLoading(false);
   };
   useEffect(() => {

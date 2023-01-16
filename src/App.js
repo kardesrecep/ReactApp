@@ -32,9 +32,10 @@ import CountryFilter from "./components/21-country-filter/CountryFilter";
 import Scroll from "./components/21-useref/Scroll";
 import UseRef from "./components/21-useref/UseRef"; 
 import ClassComp from "./components/22-class-type-component/ClassComp"; 
-import UserCards from "./components/23-fetch/UserCards";*/
-
+import UserCards from "./components/23-fetch/UserCards";
 import Countries from "./components/24-axios/Countries";
+import Form1 from "./components/26-forms/Form1";*/
+import Form3 from "./components/26-forms/Form3";
 
 const App = () => {
   return (
@@ -80,9 +81,9 @@ const App = () => {
   <UseRef/> 
   <Scroll/>  
   <ClassComp/>
-<UserCards/>*/}
-<Countries/>
-
+<UserCards/> 
+<Countries/>*/}
+<Form3/>
 
 
 
