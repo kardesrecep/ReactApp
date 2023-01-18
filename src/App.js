@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/00-home/header/header";
@@ -47,9 +49,31 @@ import Form3 from "./components/26-forms/form3";
 import Form4 from "./components/26-forms/form4";
 import Form5 from "./components/26-forms/form5";
 import Form6 from "./components/26-forms/form6";
+import Exchange from "./components/27-contex-api/exchange";
+import StoreContext from "./store";
 
 const App = () => {
+const [counter, setCounter] = useState(10);
+const [currencies, setCurrencies] = useState({})
+
+
+
+const loadData = async () => { 
+  try {
+    const resp = await axios.get("https://api.frankfurter.app/latest?from=TRY");
+    setCurrencies(resp.data.rates);
+  } catch (err) {
+    console.log(err)
+  }
+}
+useEffect(() => {
+loadData()
+}, [])
+
+
+
   return (
+    <StoreContext.Provider value={{counter,setCounter,currencies}}>
     <BrowserRouter>
       <Header />
       <Container fluid>
@@ -104,11 +128,13 @@ const App = () => {
               <Route path="/form4" element={<Form4 />} />
               <Route path="/form5" element={<Form5 />} />
               <Route path="/form6" element={<Form6 />} />
+              <Route path="/exchange" element={<Exchange />} />
             </Routes>
           </Col>
         </Row>
       </Container>
     </BrowserRouter>
+    </StoreContext.Provider>
   );
 };
 export default App;
