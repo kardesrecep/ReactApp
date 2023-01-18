@@ -1,11 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import "./scroll.scss";
+
 const Scroll = () => {
   const refAboutUs = useRef(null);
+
   
   
   useEffect(() => {
+
     const handleScroll = () => { 
         const aboutUsEl = refAboutUs.current;
         const currentScrollPosition = window.scrollY;
@@ -21,7 +24,10 @@ const Scroll = () => {
         if (currentScrollPosition >= targetScrollPosition) {
             aboutUsEl.classList.add("active");
         }
+
     }
+
+
     document.addEventListener("scroll", handleScroll);
   
     return () => {
@@ -29,6 +35,9 @@ const Scroll = () => {
     }
   }, [])
   
+
+
+
   return (
     <Container>
       {[...new Array(15)].map((item, index) => (
@@ -42,6 +51,7 @@ const Scroll = () => {
           iure cumque, culpa unde vero maiores? Nesciunt, repudiandae?
         </p>
       ))}
+
       <p className="about-us" ref={refAboutUs}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
         quisquam aspernatur debitis asperiores iusto est beatae odio, dolore
@@ -51,6 +61,7 @@ const Scroll = () => {
         iusto perspiciatis facilis quod autem eaque laudantium iste iure cumque,
         culpa unde vero maiores? Nesciunt, repudiandae?
       </p>
+
       {[...new Array(15)].map((item, index) => (
         <p key={index}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
@@ -65,4 +76,5 @@ const Scroll = () => {
     </Container>
   );
 };
+
 export default Scroll;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
+
 const Form5 = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -7,18 +8,22 @@ const Form5 = () => {
     email: "",
     phone: ""
   });
+
   const handleFormData = (e) => {
     const { name, value } = e.target;
     setFormData({...formData, [name]: value});
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
     try {
       if(!formData.firstName) throw new Error("Adınızı giriniz");
       if(!formData.lastName) throw new Error("Soyadınızı giriniz");
       if(!formData.email) throw new Error("Epostanızı giriniz");
       if(!formData.phone) throw new Error("Telefonunuzu giriniz");
       
+
       setTimeout( ()=> {
         alert("Bilgileriniz gönderildi");
         setFormData({
@@ -28,6 +33,10 @@ const Form5 = () => {
           phone: ""
         })
       }, 1000);
+
+
+
+
     } catch (err) {
       console.error(err);
       alert(err.message);
@@ -35,7 +44,9 @@ const Form5 = () => {
     
     
     
+
   }
+
   return (
     <Container className="mt-5">
       <Form method="post" onSubmit={handleSubmit} noValidate >
@@ -81,7 +92,12 @@ const Form5 = () => {
         </Form.Group>
         <Button variant="info" type="submit">Kaydet</Button>
       </Form>
+
+
+
+
     </Container>
   );
 };
+
 export default Form5;

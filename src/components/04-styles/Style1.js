@@ -3,13 +3,12 @@ import React from "react";
 const Style1 = () => {
   return (
     <div>
-      <h1 style={{border:"1px solid red",padding:"1rem",
-    borderRadius:"2rem"}}>Hello React</h1>
-      <p style={{color:"purple", fontStyle:"italic"}}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nostrum
-        assumenda voluptatibus saepe, quae nesciunt inventore quasi enim
-        consequatur veritatis! Voluptatem earum quas exercitationem dicta nemo
-        optio repellat doloribus atque!
+      <h1 style={{border: "1px solid red", padding:"1rem",borderRadius:"2rem", textAlign:"center"}}>Hello React</h1>
+      <p style={{fontStyle: "italic", fontSize:"1.3rem"}}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente
+        in excepturi fugiat repellat doloribus nobis quam sed numquam, deleniti
+        amet maxime? Asperiores ex perspiciatis rerum excepturi nostrum laborum
+        vero?
       </p>
     </div>
   );

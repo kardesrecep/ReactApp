@@ -1,15 +1,21 @@
 import React from "react";
-import "./Gallery.scss";
-import Images from "./Images.json";
+import "./gallery.scss";
+import images from "./images.json";
+
+const c = "gallery";
+
 const Gallery = () => {
   return (
-    <div className="gallery">
-      {Images.map((img, i) => (
+    <div className={`${c} row`}>
+      {images.map((img, i) => (
         <div key={i}>
-          <img src={require(`../../assets/img/${img.name}`)} alt="" />
+          <a href={require(`../../assets/img/${img.name}`)} target="_blank"><img src={require(`../../assets/img/${img.name}`)} alt="" /></a>
         </div>
       ))}
     </div>
   );
 };
+
 export default Gallery;
+
+

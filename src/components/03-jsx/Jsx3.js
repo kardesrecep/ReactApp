@@ -1,10 +1,21 @@
 import React from "react";
+
 // Comment satırı
+
 /*
     Comment bloğu
 */
+
 const Jsx3 = () => {
   const isAdmin = true;
+
+  if(isAdmin){
+
+  }
+  else{
+    
+  }
+
   return (
     <div>
       {isAdmin ? (
@@ -28,4 +39,5 @@ const Jsx3 = () => {
     </div>
   );
 };
+
 export default Jsx3;

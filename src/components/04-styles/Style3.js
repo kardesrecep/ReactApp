@@ -1,5 +1,5 @@
-import React from 'react'
-import "./Style3.css"
+import React from 'react';
+import "./style3.css";
 
 const Style3 = () => {
   return (
@@ -10,12 +10,6 @@ const Style3 = () => {
             <li>useContext</li>
             <li>useRef</li>
         </ul>
-        
-
-
-
-
-
     </div>
   )
 }

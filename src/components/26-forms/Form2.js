@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Container, Form } from "react-bootstrap";
+
 const Form2 = () => {
     const [num1, setNum1] = useState(50);
     const [num2, setNum2] = useState(0);
     const [num3, setNum3] = useState(0);
+
     useEffect(() => {
         setNum3(Number(num1) + Number(num2));
     }, [num1, num2])
     
     
+
   return (
     <Container className="mt-5">
       <Form>
@@ -40,4 +43,5 @@ const Form2 = () => {
     </Container>
   );
 };
+
 export default Form2;

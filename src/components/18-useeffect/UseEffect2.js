@@ -3,11 +3,14 @@ import { Button, Container } from "react-bootstrap";
 
 const UseEffect2 = () => {
   const [counter, setCounter] = useState(0);
+
   useEffect(() => {
     document.title = `Hello ${counter}`;
   
   }, [counter])
   
+
+
   return (
     <Container className="text-center mt-5">
       <h1>{counter} kere tıkladın</h1>
@@ -17,4 +20,5 @@ const UseEffect2 = () => {
     </Container>
   );
 };
+
 export default UseEffect2;

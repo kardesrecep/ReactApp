@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import ProductList from './ProductList'
+import Footer from './footer'
+import Header from './header'
+import ProductList from './product-list'
 
 const Shop = () => {
   return (

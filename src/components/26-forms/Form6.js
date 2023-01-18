@@ -3,18 +3,21 @@ import { useFormik } from "formik";
 import React from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import * as Yup from "yup";
+
 const Form6 = () => {
   const initialValues = {
     email: "",
     password: "",
     remember: false,
   };
+
   const validationSchema = Yup.object({
     email: Yup.string()
       .email("Geçerli bir eposta giriniz")
       .required("Boş geçmeyiniz"),
     password: Yup.string().required("Şifrenizi giriniz"),
   });
+
   const onSubmit = async (values) => {
     try {
         const resp = await axios.post("https://carrental-v3-backend.herokuapp.com/login", values);
@@ -26,11 +29,13 @@ const Form6 = () => {
         alert(err.response.data.message);
     }
   };
+
   const formik = useFormik({
     initialValues,
     validationSchema,
     onSubmit,
   });
+
   return (
     <Container className="mt-5">
       <Form noValidate onSubmit={formik.handleSubmit}>
@@ -47,6 +52,7 @@ const Form6 = () => {
             {formik.errors.email}
           </Form.Control.Feedback>
         </Form.Group>
+
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control
@@ -74,4 +80,5 @@ const Form6 = () => {
     </Container>
   );
 };
+
 export default Form6;

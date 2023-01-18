@@ -6,7 +6,7 @@ const Form4 = () => {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
+    phone: ""
   });
 
   console.log(formData);

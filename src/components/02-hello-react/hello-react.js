@@ -1,9 +1,10 @@
 import React from 'react'
 
 const HelloReact = () => {
+
   return (
-    <div>HelloReact</div>
+    <div>Hello React</div>
   )
 }
 
-export default HelloReact;
+export default HelloReact

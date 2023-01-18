@@ -1,15 +1,14 @@
 import React from 'react'
-import "./Style4.scss";
+import "./style4.scss";
 
 const Style4 = () => {
   return (
     <div className="card-list">
         <ul>
             <li>Lorem.</li>
-            <li>Libero.</li>
-            <li>Culpa.</li>
+            <li>Odit.</li>
+            <li>Optio.</li>
         </ul>
-
     </div>
   )
 }

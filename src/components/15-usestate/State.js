@@ -3,7 +3,9 @@ import { Button } from "react-bootstrap";
 
 const State = () => {
   const [mode, setMode] = useState("light");
+
   let classNames = "bg-light text-dark p-5";
+
   if (mode === "dark") {
     classNames = "bg-dark text-light p-5";
   } 
@@ -18,4 +20,5 @@ const State = () => {
     </div>
   );
 };
+
 export default State;
