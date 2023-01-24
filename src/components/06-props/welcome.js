@@ -1,10 +1,11 @@
 import React from 'react'
 import "./welcome.scss";
 
-const Welcome = (props) => {
+const Welcome = ({firstName,lastName}) => {
+ // const {firstName,lastName}=props;
   return (
     <div className="welcome">
-        <h2>Welcome {props.firstName} {props.lastName}</h2>
+        <h2>Welcome {firstName} {props.lastName}</h2>
     </div>
   )
 }

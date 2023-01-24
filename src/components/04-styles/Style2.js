@@ -20,7 +20,7 @@ const Style2 = () => {
         non!
       </p>
 
-      <h2 style={{...styleTitle, color:"blue"}}>Component Props</h2>
+      <h2 style={{...styleTitle, color:"blue", backgroundColor:"purple" }}>Component Props</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, neque
         repellat molestiae assumenda aut laborum iure, porro voluptatum commodi
