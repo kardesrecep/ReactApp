@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 
-const Product = (props) => {
-  const { image, desc, title, price } = props;
+const Product = ({product}) => {
+  const { image, desc, title, price } = product;
 
   const newTitle = title.toUpperCase();
 
