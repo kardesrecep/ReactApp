@@ -1,7 +1,8 @@
 import { createContext } from "react";
 
-const StoreContext= createContext();
-//bos merkezi state olusturldu
+// Boş bir merkezi state oluşturuldu
+const StoreContext = createContext();
 
+// Merkezi state dışarıya açıldı
 export default StoreContext;
-//merkezi state disariya acildi
+

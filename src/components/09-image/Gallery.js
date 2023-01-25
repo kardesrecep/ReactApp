@@ -9,9 +9,7 @@ const Gallery = () => {
     <div className={`${c} row`}>
       {images.map((img, i) => (
         <div key={i}>
-          <a href={require(`../../assets/img/${img.name}`)} target="_blank">
-            <img src={require(`../../assets/img/${img.name}`)} alt="" />
-          </a>
+          <a href={require(`../../assets/img/${img.name}`)} target="_blank"><img src={require(`../../assets/img/${img.name}`)} alt="" /></a>
         </div>
       ))}
     </div>
@@ -19,3 +17,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+

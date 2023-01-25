@@ -5,8 +5,7 @@ import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import menu from "./menu.json";
 import "./menu.scss";
 
-const Nenu = () => {
-  const [target, setTarget] = useState(null);
+const Menu = () => {
 
   const handleCollapse = (e) => {
     e.target.classList.toggle("collapsed");
@@ -43,4 +42,4 @@ const Nenu = () => {
     </nav>
   );
 };
-export default Nenu;
+export default Menu;
